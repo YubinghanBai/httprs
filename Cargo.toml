@@ -1,0 +1,20 @@
+[package]
+name = "httprs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1" # 错误处理
+clap = { version = "4.5.51", features = ["derive"] } # 命令行解析
+colored = "3.0.0" # 命令终端多彩显示
+jsonxf = "1.1.1" # JSON pretty print 格式化
+mime = "0.3" # 处理 mime 类型
+reqwest = { version = "0.12.24", features = ["json", "stream", "multipart"] } # HTTP 客户端
+tokio = { version = "1", features = ["full","fs"] } # 异步处理库
+syntect = "5.3.0"
+serde_json = "1.0.145"
+base64 = "0.22.1"
+indicatif = "0.18"
+futures-util = "0.3"
+mime_guess = "2.0"
+log = "0.4.28"
